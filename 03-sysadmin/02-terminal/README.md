@@ -80,11 +80,21 @@ echo netology > /proc/$$/fd/5
 
 ---
 
-```bash
-ls ./not-found 2>&1 1>&5 | grep not-found
 
+~~ls ./not-found 2>&1 1>&5 | grep not-found~~
+
+~~ls: cannot access './not-found': No such file or directory~~
+
+```bash
+touch found
+ls ./not-found ./found 5>&2 2&>1 1>&5 | grep not-found
+
+>>> ./found
 >>> ls: cannot access './not-found': No such file or directory
 ```
+
+
+---
 
 ### 9. Что выведет команда `cat /proc/$$/environ`? Как еще можно получить аналогичный по содержанию вывод?
 
