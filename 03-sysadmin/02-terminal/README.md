@@ -87,7 +87,7 @@ echo netology > /proc/$$/fd/5
 
 ```bash
 touch found
-ls ./not-found ./found 5>&2 2&>1 1>&5 | grep not-found
+ls ./not-found ./found 5>&2 2>&1 1>&5 | grep not-found
 
 >>> ./found
 >>> ls: cannot access './not-found': No such file or directory
