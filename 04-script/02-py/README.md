@@ -114,7 +114,7 @@ exit(0)
 
 import socket
 
-HOSTS_LIST_FILE = "services.txt";
+HOSTS_LIST_FILE = "services.txt"
 DEF_HOSTS_LIST = (["drive.google.com", "unknown"], ["mail.google.com", "unknown"], ["google.com", "unknown"])
 
 
